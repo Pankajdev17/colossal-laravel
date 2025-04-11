@@ -1,7 +1,5 @@
 # Fullstack Colossal: Laravel 10, Eloquent, MySQL, Tailwind CSS, jQuery, JavaScript
 
-![Collosal Preview](preview.jpg)
-
 Collosal is a visually stunning landing page designed for software companies. Featuring a modern dark theme with glassmorphism effects, this template includes multiple pages to showcase your company's services, team, and blog content.
 
 ## Key Features
