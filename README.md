@@ -40,42 +40,34 @@ Collosal is a visually stunning landing page designed for software companies. Fe
    cd colossal-laravel
 
 2. **Install PHP dependencies**:
-
-*packag*
-```bash
-npm install
-yarn install
-pnpm install
-bun install
-```
-
-*composer*
 ```bash
 composer install
-composer update
 ```
 
-## Setup .env File
-For setting up your environment variables, you can start by copying the `.env.example` file to create your `.env` file. The `.env.example` file typically contains examples or placeholders for the environment variables your application needs. To simplify this process, you can use the following command:
+3. **Install JavaScript dependencies**:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+4. **Setup environment**:
 ```bash
 cp .env.example .env
-```
-This command will duplicate the `.env.example` file and create a new file named `.env`, allowing you to fill in the actual values for your environment variables.
-
-After creating your `.env` file, ensure that your Laravel application is ready to run smoothly by executing the following command to generate an application key:
-```bash
 php artisan key:generate
 ```
-This command will generate a unique key for your application, which is essential for security and encryption purposes.
 
-Next, make sure that the database configuration in your .env file points to your MySQL database. Update the `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` variables with the appropriate values for your MySQL database setup.
+5. **Configure database**:
+   **Edit the .env file with your database credentials**:
+```bash
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+```
 
-
-To configure email-related features in your Laravel application, you need to ensure that the `MAIL_MAILER` variable in your `.env` file is appropriately set. Begin by accessing your `.env` file and locating the `MAIL_MAILER` variable. If it's not present, add it to the file. Set the value of `MAIL_MAILER` according to your email service provider's specifications. Common values include `smtp`, `sendmail`, `mailgun`, or `ses`. Ensure that other email-related variables such as `MAIL_HOST`, `MAIL_PORT`, `MAIL_USERNAME`, `MAIL_PASSWORD`, `MAIL_ENCRYPTION`, `MAIL_FROM_ADDRESS`, and `MAIL_FROM_NAME` are also properly configured based on your email service provider's settings. Once you've configured these variables, your Laravel application will be ready to send emails using the specified email service.
-
-## Setting Up Default Data
-
-To set up default data, you can use the following command:
+6. **Run migrations and seed data**:
 ```bash
 php artisan migrate:fresh --seed
 php artisan storage:link
