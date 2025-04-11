@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.label {
+    @apply font-semibold text-[16px];
+}
+
+.input {
+    @apply w-full border border-gray-300 p-[6px] rounded outline-none focus:ring-indigo-600 font-sans font-medium;
+}
+
+/* Dashboard */
+.dashboard__label {
+    @apply text-black font-medium mb-1 text-sm;
+}
+.dashboard__input {
+    @apply py-3 px-3 rounded-full border-[1.5px] text-black outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-300;
+}
+.dashboard__input-error {
+    @apply !border-red-500 !border-[1.5px] !ring-4 !ring-red-200;
+}
+.dashboard__textarea {
+    @apply py-3 px-3 rounded-[16px] border-[1.5px] text-black outline-none resize-none focus:ring-4 focus:ring-blue-100 focus:border-blue-300;
+}
+.dashboard__image-preview {
+    @apply w-fit h-fit mt-6;
+}
+.dashboard__invalid-feedback {
+    @apply text-red-500 text-xs font-medium ms-3 mt-1;
+}
+.dashboard__primary-btn {
+    @apply rounded-full px-6 py-2.5 bg-blue-500 hover:bg-blue-600 hover:ring-4 hover:ring-blue-300 transition font-medium text-white w-fit focus:ring-4 focus:bg-blue-600 focus:ring-blue-300 outline-none;
+}
+
+.dashboard-input {
+    @apply my-2 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-200 focus-within:ring-4 focus-within:ring-blue-100;
+}
+.dashboard-input__error {
+    @apply my-2 w-full px-4 py-2 border border-red-300 rounded-md focus:outline-none focus:border-red-300 focus-within:ring-4 focus-within:ring-red-100;
+}
+.input-error {
+    @apply !border-red-500 !border-[2px];
+}
+
+/* Quote */
+.btn-send-quote {
+    @apply h-[52px] rounded-[3px] bg-primary hover:bg-primary/90 transition text-white grid place-items-center font-semibold text-[16px];
+}
+.input-quote {
+    @apply bg-transparent rounded-[3px] w-full outline-none border-[1px] border-white/10 py-2.5 sm:py-2 px-3 text-white/80 font-normal text-[14px];
+}
+.label-quote {
+    @apply text-[14px] font-normal text-white/60;
+}
+
+.notification-tab > .active {
+    @apply text-blue-500 border-b-blue-500 hover:text-blue-500;
+}
+.order-tab > .active {
+    @apply bg-blue-500 text-white hover:text-white;
+}
+.main.active {
+    @apply md:w-full md:ml-0;
+}
+
+/* Settings */
+.settings__input {
+    @apply py-3 px-3 rounded-full border-[1.5px] text-black outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-300;
+}
+.settings__input-error {
+    @apply !border-red-500 !border-[1.5px] !ring-4 !ring-red-200;
+}
+.settings__textarea {
+    @apply py-3 px-3 rounded-[16px] border-[1.5px] text-black outline-none resize-none focus:ring-4 focus:ring-blue-100 focus:border-blue-300;
+}
+.settings__invalid-feedback {
+    @apply text-red-500 text-xs font-medium ms-3 mt-1;
+}
+
+/* Login */
+.login__input {
+    @apply outline-none w-full text-white text-[15px] py-[8px] px-[12px] pt-[10px] ps-[18px] block rounded-[6px] bg-white/[.03] border border-white/[.03] hover:border-[#0a0a0a] focus:border-blue-500 h-[48px];
+}
+.login__input-error {
+    @apply !border-red-500/80;
+}
+.login__label {
+    @apply text-white/70 rounded-[3px] ps-[6px] pr-[7px] text-[13.5px] font-medium leading-[15px] inline-block relative;
+}
+.login__button {
+    @apply text-[#1b1b1b] bg-white px-[26px] text-[14px] font-medium rounded-[8px] h-[50px] flex items-center justify-center mt-6 hover:bg-white/90 focus:bg-white/90 outline-none border border-white hover:border-[#0a0a0a] focus:border-[#0a0a0a];
+}
+.login__invalid-feedback {
+    @apply text-xs text-red-500/80 ps-[6px] pe-[7px] leading-[15p] inline-block relative;
+}
+
+/* Faq */
+.accordion-header .transform {
+    transform: rotate(180deg);
+}
+.accordion-header.active .transform {
+    transform: rotate(0deg);
+}
+
+/* Splide */
+.splide__slide {
+    transition: 0.5s;
+}
+
+.splide__slide.is-active .testimonial-card {
+    border: 2px solid #6016fc;
+    animation: slideIn 0.5s forwards;
+}
+
+.testimonial-card {
+    opacity: 50%;
+}
+
+.splide__slide .testimonial-card {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 50%;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Navbar - app layout */
+.navbar__list.active {
+    display: flex;
+}
+
+@keyframes showMenu {
+    0% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
