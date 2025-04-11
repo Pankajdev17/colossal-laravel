@@ -1,121 +1,47 @@
 # Fullstack Colossal: Laravel 10, Eloquent, MySQL, Tailwind CSS, jQuery, JavaScript
 
-Collosal is a visually stunning landing page designed for a software house company. With several pages including a home page, services page, about page, and even a blog page, this design is perfect for showcasing the capabilities of the company. The theme is dark with a blurry background and gradient, giving it a glassmorphism effect that is sure to impress. The various pages allow you to highlight the company's services, team, and culture, making it easy for potential clients to get a feel for what you have to offer. With a responsive design that adapts to different screen sizes and devices, Collosal ensures an optimal user experience for all visitors.
+![Collosal Preview](preview.jpg)
+
+Collosal is a visually stunning landing page designed for software companies. Featuring a modern dark theme with glassmorphism effects, this template includes multiple pages to showcase your company's services, team, and blog content.
 
 ## Key Features
 
-- Roles System
-- Crud
-- MySQL
-- Authentication
-- Authorization
-- Route Management
-- Pagination
-- File System
-- Eloquent ORM
-- Tailwind CSS
+- **User Management**: Role-based authentication system
+- **Content Management**: Full CRUD operations for all content types
+- **Modern Stack**: Laravel 10 with Eloquent ORM and MySQL
+- **Styling**: Tailwind CSS with responsive design
+- **Interactive Elements**: jQuery and JavaScript for dynamic content
+- **File Management**: Integrated file system for media handling
+- **Pagination**: Built-in pagination for content lists
 
-## Routes
+## Technology Stack
 
-**PUBLIC**
-- /home - **GET**
-- /projects - **GET**
-- /projects/{project} - **GET**
-- /quote - **GET**
-- /quote - **POST**
-- /services - **GET**
-- /services/service-detail - **GET**
-- /how-we-work - **GET**
-- /about - **GET**
-- /pricing - **GET**
-- /term-of-service - **GET**
-- /faq - **GET**
-- /contact - **GET**
-- /contact - **POST**
-- /blogs - **GET**
-- /blogs{post} - **GET**
-- /blogs/{post}/create-comment - **POST**
-- /auth/login - **GET**
-- /auth/login - **POST**
-- /auth/logout - **POST**
+- Backend: Laravel 10
+- Database: MySQL
+- ORM: Eloquent
+- Frontend: Tailwind CSS, jQuery, JavaScript
+- Build Tools: Vite
 
-**DASHBOARD**
-- /dashboard - **GET**
-- /dashboard/posts - **GET**
-- /dashboard/posts - **POST**
-- /dashboard/posts/create - **GET**
-- /dashboard/posts/{post} - **GET**
-- /dashboard/posts/{post} - **PUT**
-- /dashboard/posts/{post} - **DELETE**
-- /dashboard/posts/{post}/edit - **GET**
-- /dashboard/settings - **GET**
-- /dashboard/settings/update-password/{user} - **PUT**
-- /dashboard/settings/update-profile/{user} - **PUT**
-- /dashboard/users - **GET**
-- /dashboard/users - **POST**
-- /dashboard/users/create - **GET**
-- /dashboard/users/{user} - **GET**
-- /dashboard/users/{user} - **PUT**
-- /dashboard/users/{user} - **DELETE**
-- /dashboard/users/{user}/edit - **GET**
-- /dashboard/sponsors - **GET**
-- /dashboard/sponsors - **POST**
-- /dashboard/sponsors/create - **GET**
-- /dashboard/sponsors/{sponsor} - **GET**
-- /dashboard/sponsors/{sponsor} - **PUT**
-- /dashboard/sponsors/{sponsor} - **DELETE**
-- /dashboard/sponsors/{sponsor}/edit - **GET**
-- /dashboard/projects - **GET**
-- /dashboard/projects - **POST**
-- /dashboard/projects/create - **GET**
-- /dashboard/projects/{project} - **GET**
-- /dashboard/projects/{project} - **PUT**
-- /dashboard/projects/{project} - **DELETE**
-- /dashboard/projects/{project}/edit - **GET**
-- /dashboard/project-categories - **GET**
-- /dashboard/project-categories - **POST**
-- /dashboard/project-categories/create - **GET**
-- /dashboard/project-categories/{project_category} - **GET**
-- /dashboard/project-categories/{project_category} - **PUT**
-- /dashboard/project-categories/{project_category} - **DELETE**
-- /dashboard/project-categories/{project_category}/edit - **GET**
-- /dashboard/testimonials - **GET**
-- /dashboard/testimonials - **POST**
-- /dashboard/testimonials/create - **GET**
-- /dashboard/testimonials/{testimonial} - **GET**
-- /dashboard/testimonials/{testimonial} - **PUT**
-- /dashboard/testimonials/{testimonial} - **DELETE**
-- /dashboard/testimonials/{testimonial}/edit - **GET**
-- /dashboard/faqs - **GET**
-- /dashboard/faqs - **POST**
-- /dashboard/faqs/create - **GET**
-- /dashboard/faqs/{faq} - **GET**
-- /dashboard/faqs/{faq} - **PUT**
-- /dashboard/faqs/{faq} - **DELETE**
-- /dashboard/faqs/{faq}/edit - **GET**
-- /dashboard/faq-categories - **GET**
-- /dashboard/faq-categories - **POST**
-- /dashboard/faq-categories/create - **GET**
-- /dashboard/faq-categories/{faq_category} - **GET**
-- /dashboard/faq-categories/{faq_category} - **PUT**
-- /dashboard/faq-categories/{faq_category} - **DELETE**
-- /dashboard/faq-categories/{faq_category}/edit - **GET**
-- /dashboard/quotes - **GET**
-- /dashboard/quotes/{quote} - **GET**
-- /dashboard/quotes/{quote} - **PUT**
-- /dashboard/quotes/{quote} - **DELETE**
+## Project Setup
 
+### Prerequisites
 
-## Cloning The Repository
+- PHP 8.1+
+- Composer
+- Node.js 16+
+- MySQL 8+
+- NPM/Yarn/PNPM
 
-```bash
-git clone https://github.com/weiwei2694/laravel10-colossal.git
-cd laravel10-colossal
-```
+### Installation
 
-## Install packages
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Pankajdev17/colossal-laravel.git
+   cd colossal-laravel
 
-*package*
+2. **Install PHP dependencies**:
+
+*packag*
 ```bash
 npm install
 yarn install
